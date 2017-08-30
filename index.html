@@ -7,183 +7,97 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 
-<body class="full-height">
-
-	<div class="ui stackable menu" style="border-radius: 0px;">
-		<a class="teal item">
-			<img src="assets/images/logo.png" class="ui mini rounded image">
+<body class="app-background">
+	<div class="ui secondary stackable pointing menu nav-bar-fixes">
+		<a class="disabled item">
+			<font color="#000000"> DotSlash Community </font>
 		</a>
 
-		<div class="right menu">
-			<a class="teal item">
-				CONTRIBUTORS
-				<div class="ui teal left pointing label">2</div>
+		<!-- visible only on PC and Tablet -->
+		<div class="right menu not-for-mobile">
+			<a class="active item">
+				Register
 			</a>
 
-			<a class="teal item">
+			<a class="item">
 				COMMUNITY
 				<div class="ui teal left pointing label">11</div>
 			</a>
-			
+
 			<a class="item">
-				ABOUT
+				CONTRIBUTORS
+				<div class="ui teal left pointing label">2</div>
 			</a>
 		</div>
+
+		<!-- fix for bar on mobile -->
+		<a class="right active item for-mobile">
+			Register
+		</a>
+		
+		<a class="right item for-mobile">
+			COMMUNITY
+			<div class="ui teal left pointing label">11</div>
+		</a>
+
+		<a class="right item for-mobile">
+			CONTRIBUTORS
+			<div class="ui teal left pointing label">2</div>
+		</a>
 	</div>
-
-	<!-- both grid columns -->
-	<div class="ui stackable middle aligned divided grid" >
-
-		<!-- to have a divisiable -->
-		<div class="sixteen column stretched row">
-			
-			<!-- left column -->
-			<div class="six wide column">
-				<div class="ui centered fifteen column grid">
-					<div class="fifteen wide column">
-						<div class="ui three top attached mini steps">
-							<div class="step">
-								<div class="content">
-									<div class="title">Shipping</div>
-									<div class="description">Choose your shipping options</div>
-								</div>
-							</div>
-							<div class="active step">
-								<div class="content">
-									<div class="title">Billing</div>
-									<div class="description">Enter billing information</div>
-								</div>
-							</div>
-							<div class="disabled step">
-								<div class="content">
-									<div class="title">Confirm Order</div>
-									<div class="description">Verify order details</div>
-								</div>
+	
+	<div class="ui stackable grid register-view">
+		<div class="sixteen wide column">
+			<div class="ui stacked segment" >
+				<div class="relative">
+					<div class="ui three top attached mini steps">
+						<div class="active step">
+							<div class="content">
+								<div class="title">Academic</div>
+								<div class="description">how many scars ?</div>
 							</div>
 						</div>
-
-						<div class="ui attached segment">
-							<div class="ui form">
-								<div class="one field">
-									<div class="field">
-										<label class="small-text">ROLL NUMBER</label>
-										<div class="ui icon input loading">
-											<i class="write icon"></i>
-											<input placeholder="Roll Number" type="text">
-										</div>
-									</div>
-								</div>
+						<div class="step">
+							<div class="content">
+								<div class="title">Personal</div>
+								<div class="description">you got a name ?</div>
 							</div>
 						</div>
-
-
-						<div class="large ui two bottom attached buttons">
-							<div class="ui animated button" tabindex="0">
-								<div class="visible content">Back</div>
-								<div class="hidden content">
-									<i class="left arrow icon"></i>
-								</div>
-							</div>
-
-							<div class="large ui primary animated button" tabindex="0">
-								<div class="visible content">Next</div>
-								<div class="hidden content">
-									<i class="right arrow icon"></i>
-								</div>
+						<div class="disabled step">
+							<div class="content">
+								<div class="title">Contact</div>
+								<div class="description">how to reach you ?</div>
 							</div>
 						</div>
-
-						<div class="ui horizontal divider small-text desc-text-color">
-							FEATURED PROJECTS
-						</div>
-
-						<!-- featured projects -->
-						<div class="ui stackable middle aligned grid">
-							<div class="eight wide column">
-								<div class="ui card">
-									<div class="content">
-										<div class="header">members</div>
-										<div class="meta">2 days ago</div>
-										<div class="description">
-											<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces.</p>
-										</div>
-									</div>
-									<div class="extra content">
-										<i class="git icon"></i>
-										121 Votes
-									</div>
-								</div>
-							</div>
-
-							<div class="eight wide column">
-								<div class="ui card">
-									<div class="content">
-										<div class="header">members</div>
-										<div class="meta">2 days ago</div>
-										<div class="description">
-											<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces.</p>
-										</div>
-									</div>
-									<div class="extra content">
-										<i class="git icon"></i>
-										121 Votes
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
 				</div>
-			</div>
 
-			<!-- right side -->
-			<div class="ten wide column">
-				<div class="ui centered fifteen column grid">
-					<div class="fifteen wide column">
-						<div class="ui segments">
-							<div class="ui segment">
-								<div class="ui styled fluid accordion">
-									<div class="title">
-										<i class="dropdown icon"></i>
-										What is a dog?
-									</div>
-									<div class="content">
-										<p class="transition hidden">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
-									</div>
-									<div class="title active">
-										<i class="dropdown icon"></i>
-										What kinds of dogs are there?
-									</div>
-									<div class="content active">
-										<p class="transition visible" style="display: block !important;">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
-									</div>
+				<div class="ui attached segment">
+					<div class="ui form">
+						<div class="one field">
+							<div class="field">
+								<label class="small-text">ROLL NUMBER</label>
+								<div class="ui icon input loading">
+									<i class="write icon"></i>
+									<input placeholder="Roll Number" type="text">
 								</div>
 							</div>
-							<div class="ui secondary segment">
-								<div class="ui relaxed list">
-									<div class="item">
-										<img class="ui avatar image" src="/images/avatar/small/daniel.jpg">
-										<div class="content">
-											<a class="header">Daniel Louise</a>
-											<div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
-										</div>
-									</div>
-									<div class="item">
-										<img class="ui avatar image" src="/images/avatar/small/stevie.jpg">
-										<div class="content">
-											<a class="header">Stevie Feliciano</a>
-											<div class="description">Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
-										</div>
-									</div>
-									<div class="item">
-										<img class="ui avatar image" src="/images/avatar/small/elliot.jpg">
-										<div class="content">
-											<a class="header">Elliot Fu</a>
-											<div class="description">Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="large ui two bottom attached buttons">
+					<div class="ui animated disabled button" tabindex="0">
+						<div class="visible content">Back</div>
+						<div class="hidden content">
+							<i class="left arrow icon"></i>
+						</div>
+					</div>
+
+					<div class="large ui primary animated button" tabindex="0">
+						<div class="visible content">Next</div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
 						</div>
 					</div>
 				</div>
@@ -191,9 +105,19 @@
 		</div>
 	</div>
 
+	<span class="icon-footer">
+		<i class="icon github"></i>
+		<i class="icon twitter"></i>
+		<i class="icon facebook"></i>
+		<i class="icon heart red-color"></i>
+	</span>
+
 	<link rel="stylesheet" type="text/css" href="css/app/main.css">
-	<link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css" />
 	<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="libs/semantic/semantic.min.js"></script>
+
+	<!-- ########## NOTE ##########
+	During deployment please ensure this is uncommented and the bottom half is commented -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.css">
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.js"></script>
 </body>
 </html>

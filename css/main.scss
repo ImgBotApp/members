@@ -4,14 +4,71 @@
 */
 @import 'variables';
 
-.full-height {
-	min-height: 100%;
+/* backgrounds */
+.app-background {
+	background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+	background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 
+.register-view, .icon-footer {
+	position: absolute !important; left: 50%;
+	transform: translate(-50%, -50%);
+} 
+
+/* handles register view */
+.register-view { 
+	top: 50%; width: $register-panel-width !important;
+}
+
+/* the footer */
+.icon-footer {
+	bottom: 0px !important;
+}
+
+/* happens when it is not a mobile */
+@media only screen and (max-width: 767px) {
+	.register-view {
+		top: auto !important;
+		left: $register-panel-mobile-margin !important;
+		width: $register-panel-mobile-width !important;
+		position: relative !important;
+		transform: none;
+	}
+
+	.not-for-mobile {
+		display: none !important;
+	}
+
+	.icon-footer {
+		padding: $icon-footer-mobile-padding;
+		position: relative !important;
+		left: 50%; display: inline-block;
+		transform: translate(-50%);
+	}
+}
+
+/* happens when it is indeed a mobile */
+@media only screen and (min-width: 768px) {
+	.for-mobile {
+		display: none !important;
+	}
+}
+
+/* utilities */
 .small-text {
-	font-size: $small-font-size !important;
+	font-size: 10px !important;
 }
 
-.desc-text-color {
-	font-color: $desc-text-color;
+.nav-bar-fixes {
+	padding: $nav-bar-padding;
+	border: 0px !important;
+}
+
+.relative {
+	position: relative;
+}
+
+.red-color {
+	color: red;
 }

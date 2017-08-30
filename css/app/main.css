@@ -7,11 +7,59 @@
 	the variables required to
 	do this stuff mate
 */
-.full-height {
-  min-height: 100%; }
+/* backgrounds */
+.app-background {
+  background: #ECE9E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); }
 
+.register-view, .icon-footer {
+  position: absolute !important;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* handles register view */
+.register-view {
+  top: 50%;
+  width: 39% !important; }
+
+/* the footer */
+.icon-footer {
+  bottom: 0px !important; }
+
+/* happens when it is not a mobile */
+@media only screen and (max-width: 767px) {
+  .register-view {
+    top: auto !important;
+    left: 5% !important;
+    width: 90% !important;
+    position: relative !important;
+    transform: none; }
+
+  .not-for-mobile {
+    display: none !important; }
+
+  .icon-footer {
+    padding: 15px;
+    position: relative !important;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%); } }
+/* happens when it is indeed a mobile */
+@media only screen and (min-width: 768px) {
+  .for-mobile {
+    display: none !important; } }
+/* utilities */
 .small-text {
   font-size: 10px !important; }
 
-.desc-text-color {
-  font-color: #141414; }
+.nav-bar-fixes {
+  padding: 12px;
+  border: 0px !important; }
+
+.relative {
+  position: relative; }
+
+.red-color {
+  color: red; }
