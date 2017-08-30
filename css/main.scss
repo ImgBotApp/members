@@ -1,1 +1,17 @@
-@import '_variables';
+/*
+	@author ksdme
+	main.scss
+*/
+@import 'variables';
+
+.full-height {
+	min-height: 100%;
+}
+
+.small-text {
+	font-size: $small-font-size !important;
+}
+
+.desc-text-color {
+	font-color: $desc-text-color;
+}

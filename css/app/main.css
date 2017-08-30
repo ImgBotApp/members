@@ -1,0 +1,17 @@
+/*
+	@author ksdme
+	main.scss
+*/
+/*
+	@author ksdme
+	the variables required to
+	do this stuff mate
+*/
+.full-height {
+  min-height: 100%; }
+
+.small-text {
+  font-size: 10px !important; }
+
+.desc-text-color {
+  font-color: #141414; }

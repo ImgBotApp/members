@@ -1,115 +1,199 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<head>
+	<title></title>
 
-        <!-- get em baby -->
-        <link rel="stylesheet" type="text/css" href="css/app/main.css">
-    </head>
+	<!-- disable zoom for the page -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
 
-    <body>
+<body class="full-height">
+
+	<div class="ui stackable menu" style="border-radius: 0px;">
+		<a class="teal item">
+			<img src="assets/images/logo.png" class="ui mini rounded image">
+		</a>
+
+		<div class="right menu">
+			<a class="teal item">
+				CONTRIBUTORS
+				<div class="ui teal left pointing label">2</div>
+			</a>
+
+			<a class="teal item">
+				COMMUNITY
+				<div class="ui teal left pointing label">11</div>
+			</a>
+			
+			<a class="item">
+				ABOUT
+			</a>
+		</div>
+	</div>
+
+	<!-- both grid columns -->
+	<div class="ui stackable middle aligned divided grid" >
+
+		<!-- to have a divisiable -->
+		<div class="sixteen column stretched row">
+			
+			<!-- left column -->
+			<div class="six wide column">
+				<div class="ui centered fifteen column grid">
+					<div class="fifteen wide column">
+						<div class="ui three top attached mini steps">
+							<div class="step">
+								<div class="content">
+									<div class="title">Shipping</div>
+									<div class="description">Choose your shipping options</div>
+								</div>
+							</div>
+							<div class="active step">
+								<div class="content">
+									<div class="title">Billing</div>
+									<div class="description">Enter billing information</div>
+								</div>
+							</div>
+							<div class="disabled step">
+								<div class="content">
+									<div class="title">Confirm Order</div>
+									<div class="description">Verify order details</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ui attached segment">
+							<div class="ui form">
+								<div class="one field">
+									<div class="field">
+										<label class="small-text">ROLL NUMBER</label>
+										<div class="ui icon input loading">
+											<i class="write icon"></i>
+											<input placeholder="Roll Number" type="text">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
 
-    <!-- Navigation Bar -->
+						<div class="large ui two bottom attached buttons">
+							<div class="ui animated button" tabindex="0">
+								<div class="visible content">Back</div>
+								<div class="hidden content">
+									<i class="left arrow icon"></i>
+								</div>
+							</div>
 
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+							<div class="large ui primary animated button" tabindex="0">
+								<div class="visible content">Next</div>
+								<div class="hidden content">
+									<i class="right arrow icon"></i>
+								</div>
+							</div>
+						</div>
 
-            <div class="uk-navbar-left">
-                <img src="assets/images/brand.png" class="uk-navbar-item uk-logo uk-border-rounded">
-            </div>
+						<div class="ui horizontal divider small-text desc-text-color">
+							FEATURED PROJECTS
+						</div>
 
+						<!-- featured projects -->
+						<div class="ui stackable middle aligned grid">
+							<div class="eight wide column">
+								<div class="ui card">
+									<div class="content">
+										<div class="header">members</div>
+										<div class="meta">2 days ago</div>
+										<div class="description">
+											<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces.</p>
+										</div>
+									</div>
+									<div class="extra content">
+										<i class="git icon"></i>
+										121 Votes
+									</div>
+								</div>
+							</div>
 
-            <div class="uk-navbar-right uk-visible@s">
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <a href="https://t.me/joinchat/Djug9EOZxSQcmEOaVosuXA">
-                            @DotSlash
-                        </a>
-                    </li>
+							<div class="eight wide column">
+								<div class="ui card">
+									<div class="content">
+										<div class="header">members</div>
+										<div class="meta">2 days ago</div>
+										<div class="description">
+											<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces.</p>
+										</div>
+									</div>
+									<div class="extra content">
+										<i class="git icon"></i>
+										121 Votes
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <li><a href="">CONTRIBUTORS</a></li>
-                    <li><a href="">ABOUT</a></li>
-                </ul>
-            </div>
+					</div>
+				</div>
+			</div>
 
-            <div class="uk-navbar-right uk-offcanvas-content uk-hidden@s">
+			<!-- right side -->
+			<div class="ten wide column">
+				<div class="ui centered fifteen column grid">
+					<div class="fifteen wide column">
+						<div class="ui segments">
+							<div class="ui segment">
+								<div class="ui styled fluid accordion">
+									<div class="title">
+										<i class="dropdown icon"></i>
+										What is a dog?
+									</div>
+									<div class="content">
+										<p class="transition hidden">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+									</div>
+									<div class="title active">
+										<i class="dropdown icon"></i>
+										What kinds of dogs are there?
+									</div>
+									<div class="content active">
+										<p class="transition visible" style="display: block !important;">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+									</div>
+								</div>
+							</div>
+							<div class="ui secondary segment">
+								<div class="ui relaxed list">
+									<div class="item">
+										<img class="ui avatar image" src="/images/avatar/small/daniel.jpg">
+										<div class="content">
+											<a class="header">Daniel Louise</a>
+											<div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
+										</div>
+									</div>
+									<div class="item">
+										<img class="ui avatar image" src="/images/avatar/small/stevie.jpg">
+										<div class="content">
+											<a class="header">Stevie Feliciano</a>
+											<div class="description">Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
+										</div>
+									</div>
+									<div class="item">
+										<img class="ui avatar image" src="/images/avatar/small/elliot.jpg">
+										<div class="content">
+											<a class="header">Elliot Fu</a>
+											<div class="description">Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                <button style="border:0;" class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcnvs">
-                    <span uk-icon="icon: menu; ratio: 1.3"></span>
-                </button>
-
-                <div id="offcnvs" uk-offcanvas="mode: slide; overlay: true">
-                    <div class="uk-offcanvas-bar">
-
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-                        <dl class="uk-description-list-line">
-                            <br><br>
-                            <dt><a href="">ABOUT</a></dt>
-                            <dd>&emsp;know our team</dd>
-                            <br>
-                            <dt>
-                                <a href="https://t.me/joinchat/Djug9EOZxSQcmEOaVosuXA">
-                                    @DotSlash
-                                </a>
-                            </dt>
-                            <dd>&emsp;join us on telegram</dd>
-                            <br>
-                            <dt><a href="">CONTRIBUTORS</a></dt>
-                            <dd>&emsp;know people who build this</dd>
-                        </dl>
-
-                        <br><br>
-
-
-                    </div>
-                </div>
-            
-            </div>
-
-        </nav>
-
-    <!-- Navigation Bar End -->
-
-        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-height-viewport" uk-grid>
-            <div class="uk-width-2-5@m">
-                <div class="uk-background-muted uk-padding">
-                    <ul class="uk-flex-center uk-dotnav uk-dotnav-horizontal">
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                        <li><a href="#">Item 4</a></li>
-                        <li><a href="#">Item 5</a></li>
-                    </ul>
-                    
-                    <div class="uk-container">
-                      <div class="uk-margin">
-                        <div class="uk-inline">
-                          <span class="uk-form-icon" uk-icon="icon: hashtag"></span>
-                          <input class="uk-input" type="text">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="uk-container">
-                        <button class="uk-button uk-button-default">
-                            <span uk-icon="icon: arrow-right"></span>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-            <div>
-                <div class="uk-background-primary uk-padding uk-light">Item</div>
-            </div>
-        </div>
-
-        <!-- let them load after the content does -->
-        <link rel="stylesheet" type="text/css" href="libs/uikit/css/uikit.min.css" />
-        <script src="libs/jquery/js/jquery-3.2.min.js"></script>
-        <script src="libs/uikit/js/uikit.min.js"></script>
-        <script src="libs/uikit/js/uikit-icons.min.js"></script>
-
-    </body>
+	<link rel="stylesheet" type="text/css" href="css/app/main.css">
+	<link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css" />
+	<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="libs/semantic/semantic.min.js"></script>
+</body>
 </html>
