@@ -1,0 +1,68 @@
+/*
+	@author prashantxc
+*/
+
+/* backgrounds */
+.app-background {
+  background: #ECE9E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+}
+
+/* the footer */
+.icon-footer {
+  padding: 15px;
+  position: relative !important;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%); 
+}
+
+/* about */
+.about-content {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* happens when it is not a mobile */
+@media only screen and (max-width: 767px) {
+  .not-for-mobile {
+    display: none !important; 
+  }
+
+  .icon-footer {
+    padding: 15px;
+    position: relative !important;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%); 
+  } 
+}
+
+/* happens when it is indeed a mobile */
+@media only screen and (min-width: 768px) {
+  .for-mobile {
+    display: none !important;
+  }
+}
+
+/* utilities */
+
+.nav-bar-fixes {
+  padding: 12px;
+  border: 0px !important;
+}
+
+.red-color {
+  color: red;
+}
+
+.hover-text {
+  color: white;
+}
+
+.mob {
+  margin-left: 5px;
+  margin-right: 5px;
+}
