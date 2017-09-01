@@ -1,0 +1,90 @@
+/*
+	@author prashantxc
+	@translated ksdme
+*/
+@import 'variables';
+@import 'utils';
+
+/* module level utilities */
+@mixin face($name) {
+	background: url('../../assets/images/#{$name}') no-repeat center center;
+}
+
+@mixin lorem-face($name) {
+	@include face("lorem/#{$name}");
+}
+
+/* app globals */
+.app-background { @include app-background(); }
+.app-nav-bar-fixes { @include app-nav-bar-fixes(); }
+
+/* container for faces */
+.faces {
+	font-size: 0px;
+	line-height: 0px;
+
+	position: absolute !important;
+	bottom: -10px;
+	left: 0px;
+}
+
+/* a single face */
+.face {
+	width: 20%;
+	margin: 0px;
+	padding-top: 20%;
+	display: inline-block;
+	background-size: auto 100% !important;
+}
+
+/* push content down */
+.page-content {
+	position: absolute;
+	top: 110vh;
+}
+
+/* the five founding faces */
+.face-1 { @include face("ksdme.jpg"); }
+.face-2 { @include face("proxc.jpg"); }
+.face-3 { @include lorem-face("alex.jpg"); }
+.face-4 { @include lorem-face("carl.jpg"); }
+.face-5 { @include lorem-face("sam.jpeg"); }
+
+/* responsive design */
+@media only screen and (max-width: 767px) {
+	.not-for-mobile {
+		display: none !important; 
+	}
+
+	.faces {
+		position: static !important;
+	}
+
+	.face {
+		width: 50%;
+		padding-top: 50%;
+		display: inline-block;
+		background-size: auto 100%;
+	}
+
+	.face-5 {
+		background-size: 100% auto !important;
+		width: 100% !important;
+	}
+
+	.page-content {
+		position: static !important;
+	}
+}
+
+/* happens when it is not a mobile */
+@media only screen and (min-width: 768px) {
+	.for-mobile {
+		display: none !important;
+	}
+}
+
+/* class utiltities */
+.red-color { color: red; }
+.hover-color { color: white; }
+.small-font { font-size: $app-small-font; }

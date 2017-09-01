@@ -1,0 +1,15 @@
+/*
+	@author ksdme
+*/
+@import 'variables';
+
+@mixin app-background() {
+	background: $app-bg-gradient-to;
+	background: linear-gradient(to right, #FFFFFF, $app-bg-gradient-to); 
+	background: -webkit-linear-gradient(to right, #FFFFFF, $app-bg-gradient-to);
+}
+
+@mixin app-nav-bar-fixes() {
+	padding: $nav-bar-padding;
+	border: 0px !important;
+}

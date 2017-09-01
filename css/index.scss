@@ -3,13 +3,11 @@
 	main.scss
 */
 @import 'variables';
+@import 'utils';
 
-/* backgrounds */
-.app-background {
-	background: #ECE9E6;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
-	background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-}
+/* app globals */
+.app-background { @include app-background(); }
+.app-nav-bar-fixes { @include app-nav-bar-fixes(); }
 
 .register-view, .icon-footer {
 	position: absolute !important; left: 50%;
@@ -26,18 +24,18 @@
 	bottom: 0px !important;
 }
 
-/* happens when it is not a mobile */
+/* happens when it is a mobile */
 @media only screen and (max-width: 767px) {
+	.not-for-mobile {
+		display: none !important;
+	}
+
 	.register-view {
 		top: auto !important;
 		left: $register-panel-mobile-margin !important;
 		width: $register-panel-mobile-width !important;
 		position: relative !important;
 		transform: none;
-	}
-
-	.not-for-mobile {
-		display: none !important;
 	}
 
 	.icon-footer {
@@ -48,7 +46,7 @@
 	}
 }
 
-/* happens when it is indeed a mobile */
+/* happens when it is not a mobile */
 @media only screen and (min-width: 768px) {
 	.for-mobile {
 		display: none !important;
@@ -56,19 +54,6 @@
 }
 
 /* utilities */
-.small-text {
-	font-size: 10px !important;
-}
-
-.nav-bar-fixes {
-	padding: $nav-bar-padding;
-	border: 0px !important;
-}
-
-.relative {
-	position: relative;
-}
-
-.red-color {
-	color: red;
-}
+.small-text { font-size: $app-small-font; }
+.relative {	position: relative; }
+.red-color { color: red; }
