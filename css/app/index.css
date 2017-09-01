@@ -7,12 +7,31 @@
 	the variables required to
 	do this stuff mate
 */
-/* backgrounds */
+/* globals */
+/* general nav bar */
+/* registration panel */
+/* registration panel */
+/*
+	@author ksdme
+*/
+/*
+	@author ksdme
+	the variables required to
+	do this stuff mate
+*/
+/* globals */
+/* general nav bar */
+/* registration panel */
+/* registration panel */
+/* app globals */
 .app-background {
   background: #ECE9E6;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6); }
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); }
+
+.app-nav-bar-fixes {
+  padding: 12px;
+  border: 0px !important; }
 
 .register-view, .icon-footer {
   position: absolute !important;
@@ -28,8 +47,11 @@
 .icon-footer {
   bottom: 0px !important; }
 
-/* happens when it is not a mobile */
+/* happens when it is a mobile */
 @media only screen and (max-width: 767px) {
+  .not-for-mobile {
+    display: none !important; }
+
   .register-view {
     top: auto !important;
     left: 5% !important;
@@ -37,26 +59,19 @@
     position: relative !important;
     transform: none; }
 
-  .not-for-mobile {
-    display: none !important; }
-
   .icon-footer {
     padding: 15px;
     position: relative !important;
     left: 50%;
     display: inline-block;
     transform: translate(-50%); } }
-/* happens when it is indeed a mobile */
+/* happens when it is not a mobile */
 @media only screen and (min-width: 768px) {
   .for-mobile {
     display: none !important; } }
 /* utilities */
 .small-text {
-  font-size: 10px !important; }
-
-.nav-bar-fixes {
-  padding: 12px;
-  border: 0px !important; }
+  font-size: 10px; }
 
 .relative {
   position: relative; }

@@ -1,68 +1,106 @@
 /*
 	@author prashantxc
+	@translated ksdme
 */
-
-/* backgrounds */
+/*
+	@author ksdme
+	the variables required to
+	do this stuff mate
+*/
+/* globals */
+/* general nav bar */
+/* registration panel */
+/* registration panel */
+/*
+	@author ksdme
+*/
+/*
+	@author ksdme
+	the variables required to
+	do this stuff mate
+*/
+/* globals */
+/* general nav bar */
+/* registration panel */
+/* registration panel */
+/* module level utilities */
+/* app globals */
 .app-background {
   background: #ECE9E6;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
-}
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); }
 
-/* the footer */
-.icon-footer {
-  padding: 15px;
-  position: relative !important;
-  left: 50%;
+.app-nav-bar-fixes {
+  padding: 12px;
+  border: 0px !important; }
+
+/* container for faces */
+.faces {
+  font-size: 0px;
+  line-height: 0px;
+  position: absolute !important;
+  bottom: -10px;
+  left: 0px; }
+
+/* a single face */
+.face {
+  width: 20%;
+  margin: 0px;
+  padding-top: 20%;
   display: inline-block;
-  transform: translate(-50%); 
-}
+  background-size: auto 100% !important; }
 
-/* about */
-.about-content {
-  color: rgba(0, 0, 0, 0.6);
-}
+/* push content down */
+.page-content {
+  position: absolute;
+  top: 110vh; }
 
+/* the five founding faces */
+.face-1 {
+  background: url("../../assets/images/ksdme.jpg") no-repeat center center; }
 
-/* happens when it is not a mobile */
+.face-2 {
+  background: url("../../assets/images/proxc.jpg") no-repeat center center; }
+
+.face-3 {
+  background: url("../../assets/images/lorem/alex.jpg") no-repeat center center; }
+
+.face-4 {
+  background: url("../../assets/images/lorem/carl.jpg") no-repeat center center; }
+
+.face-5 {
+  background: url("../../assets/images/lorem/sam.jpeg") no-repeat center center; }
+
+/* responsive design */
 @media only screen and (max-width: 767px) {
   .not-for-mobile {
-    display: none !important; 
-  }
+    display: none !important; }
 
-  .icon-footer {
-    padding: 15px;
-    position: relative !important;
-    left: 50%;
+  .faces {
+    position: static !important; }
+
+  .face {
+    width: 50%;
+    padding-top: 50%;
     display: inline-block;
-    transform: translate(-50%); 
-  } 
-}
+    background-size: auto 100%; }
 
-/* happens when it is indeed a mobile */
+  .face-5 {
+    background-size: 100% auto !important;
+    width: 100% !important; }
+
+  .page-content {
+    position: static !important; } }
+/* happens when it is not a mobile */
 @media only screen and (min-width: 768px) {
   .for-mobile {
-    display: none !important;
-  }
-}
-
-/* utilities */
-
-.nav-bar-fixes {
-  padding: 12px;
-  border: 0px !important;
-}
-
+    display: none !important; } }
+/* class utiltities */
 .red-color {
-  color: red;
-}
+  color: red; }
 
-.hover-text {
-  color: white;
-}
+.hover-color {
+  color: white; }
 
-.mob {
-  margin-left: 5px;
-  margin-right: 5px;
-}
+.small-font {
+  font-size: 10px; }
