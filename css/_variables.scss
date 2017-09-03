@@ -6,7 +6,10 @@
 
 /* globals */
 $app-small-font: 10px;
+$app-footer-height: 8vh;
+$app-footer-color: white;
 $app-bg-gradient-to: #ECE9E6;
+$app-mobile-header-label-padding: 5px;
 
 /* general nav bar */
 $nav-bar-padding: 12px;
@@ -16,5 +19,5 @@ $register-panel-width: 39%;
 $register-panel-mobile-width: 90%;
 $register-panel-mobile-margin: 5%;
 
-/* registration panel */
-$icon-footer-mobile-padding: 20px;
+/* only registration panel */
+$register-icon-footer-mobile-padding: 20px;

@@ -12,4 +12,22 @@
 @mixin app-nav-bar-fixes() {
 	padding: $nav-bar-padding;
 	border: 0px !important;
+	margin: 0px !important;
+}
+
+@mixin footer-love() {
+	justify-content: center;
+	align-items: center;
+	background: black;
+	display: flex;
+	width: 100%;
+	height: $app-footer-height;
+}
+
+@mixin footer-lover() {
+	color: $app-footer-color;
+}
+
+@mixin no-pseudo-content {
+	display: none !important;
 }
