@@ -8,6 +8,41 @@
 </head>
 
 <body class="app-background">
+	
+	<!-- mobile navigation bar -->
+	<div class="ui menu zero-radius for-mobile">
+		<div class="item no-pc">
+			<img src="assets/images/logo.png" class="ui middle aligned mini rounded image">
+		</div>
+
+		<div class="right item no-before">
+			<button class="ui icon button">
+				<i class="icon sidebar"></i>
+			</button>
+		</div>
+	</div>
+
+	<div class="ui centered grid for-mobile">
+		<div class="fifteen wide column">
+			<div class="ui fluid vertical menu">
+				<a class="teal item">
+					Register
+					<div class="ui label">1</div>
+				</a>
+				<a class="active item">
+					Community
+					<div class="ui teal left pointing label">11</div>
+				</a>
+				<a class="item">
+					Contributors
+					<div class="ui label">2</div>
+				</a>
+			</div>
+		</div>		
+	</div>
+	<!-- ends mobile nav -->
+
+	<!-- not mobile navigation bar -->
 	<div class="ui secondary stackable pointing menu app-nav-bar-fixes">
 		<a class="disabled item not-for-mobile">
 			<font color="#000000"> DotSlash Community </font>
@@ -15,11 +50,11 @@
 
 		<!-- visible only on PC and Tablet -->
 		<div class="right menu not-for-mobile">
-			<a class="active item">
+			<a class="item">
 				Register
 			</a>
 
-			<a class="item">
+			<a class="active item">
 				COMMUNITY
 				<div class="ui teal left pointing label">11</div>
 			</a>
@@ -29,22 +64,8 @@
 				<div class="ui teal left pointing label">2</div>
 			</a>
 		</div>
-
-		<!-- fix for bar on mobile -->
-		<a class="right active item for-mobile">
-			Register
-		</a>
-		
-		<a class="right item for-mobile">
-			COMMUNITY
-			<div class="ui teal left pointing label">11</div>
-		</a>
-
-		<a class="right item for-mobile">
-			CONTRIBUTORS
-			<div class="ui teal left pointing label">2</div>
-		</a>
 	</div>
+	<!-- ends not mobile nav -->
 	
 	<div class="ui stackable grid register-view">
 		<div class="sixteen wide column">
