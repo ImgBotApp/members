@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- disable zoom for the page -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body class="app-background">
+	
+	<!-- mobile navigation bar -->
+	<div class="ui menu zero-radius for-mobile">
+		<div class="item no-pc">
+			<img src="assets/images/logo.png" class="ui middle aligned mini rounded image">
+		</div>
+
+		<div class="right item no-before">
+			<button class="ui icon button">
+				<i class="icon sidebar"></i>
+			</button>
+		</div>
+	</div>
+
+	<div class="ui centered grid for-mobile">
+		<div class="fifteen wide column">
+			<div class="ui fluid vertical menu">
+				<a class="active item">
+					Register
+					<div class="ui teal left pointing label">1</div>
+				</a>
+				<a class="item">
+					Community
+					<div class="ui label">11</div>
+				</a>
+				<a class="item">
+					Contributors
+					<div class="ui label">2</div>
+				</a>
+			</div>
+		</div>		
+	</div>
+	<!-- ends mobile nav -->
+
+	<!-- not mobile navigation bar -->
+	<div class="ui secondary stackable pointing menu app-nav-bar-fixes">
+		<a class="disabled item not-for-mobile">
+			<font color="#000000"> DotSlash Community </font>
+		</a>
+
+		<!-- visible only on PC and Tablet -->
+		<div class="right menu not-for-mobile">
+			<a class="active item">
+				REGISTER
+			</a>
+
+			<a class="item">
+				COMMUNITY
+				<div class="ui teal left pointing label">11</div>
+			</a>
+
+			<a class="item">
+				CONTRIBUTORS
+				<div class="ui teal left pointing label">2</div>
+			</a>
+		</div>
+	</div>
+	<!-- ends not mobile nav -->
+	
+	<div class="ui stackable grid register-view">
+		<div class="sixteen wide column">
+			<div class="ui stacked segment" >
+				<div class="relative">
+					<div class="ui three top attached mini steps">
+						<div class="active step">
+							<div class="content">
+								<div class="title">Academic</div>
+								<div class="description">how many scars ?</div>
+							</div>
+						</div>
+						<div class="disabled step">
+							<div class="content">
+								<div class="title">Personal</div>
+								<div class="description">you got a name ?</div>
+							</div>
+						</div>
+						<div class="disabled step">
+							<div class="content">
+								<div class="title">Contact</div>
+								<div class="description">how to reach you ?</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ui attached segment">
+					<div class="ui form">
+						<div class="one field">
+							<div class="field">
+								<label class="small-text">ROLL NUMBER</label>
+								<div class="ui icon input loading">
+									<i class="write icon"></i>
+									<input placeholder="Roll Number" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="large ui two bottom attached buttons">
+					<div class="ui animated disabled button" tabindex="0">
+						<div class="visible content">Back</div>
+						<div class="hidden content">
+							<i class="left arrow icon"></i>
+						</div>
+					</div>
+
+					<div class="large ui primary animated button" tabindex="0">
+						<div class="visible content">Next</div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<span class="icon-footer">
+		<i class="icon github"></i>
+		<i class="icon twitter"></i>
+		<i class="icon facebook"></i>
+		<i class="icon heart red-color"></i>
+	</span>
+
+	<link rel="stylesheet" type="text/css" href="css/app/register.css">
+	<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
+
+	<!-- ########## NOTE ##########
+	During deployment please ensure this is uncommented and the bottom half is commented -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.css">
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.js"></script> -->
+
+	<link rel="stylesheet" href="libs/semantic/semantic.min.css">
+	<script src="libs/semantic/semantic.min.js"></script>
+</body>
+</html>
