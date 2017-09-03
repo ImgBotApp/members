@@ -9,14 +9,45 @@
 
 <body class="app-background">
 
-	<!-- Navigation Bar -->
+	<!-- mobile navigation bar -->
+	<div class="ui menu zero-radius for-mobile">
+		<div class="item">
+			<img src="assets/images/logo.png" class="ui middle aligned mini rounded image">
+		</div>
 
+		<div class="right item">
+			<button class="ui icon button">
+				<i class="icon sidebar"></i>
+			</button>
+		</div>
+	</div>
+
+	<div class="ui centered grid for-mobile">
+		<div class="fifteen wide column">
+			<div class="ui fluid vertical menu">
+				<a class="teal item">
+					Register
+					<div class="ui label">1</div>
+				</a>
+				<a class="active item">
+					Community
+					<div class="ui teal left pointing label">11</div>
+				</a>
+				<a class="item">
+					Contributors
+					<div class="ui label">2</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- ends mobile nav -->
+
+	<!-- not mobile navigation bar -->
 	<div class="ui secondary stackable pointing menu app-nav-bar-fixes">
 		<a class="disabled item not-for-mobile">
 			<font color="#000000"> DotSlash Community </font>
 		</a>
 
-		<!-- visible only on PC and Tablet -->
 		<div class="right menu not-for-mobile">
 			<a class="item">
 				Register
@@ -32,50 +63,11 @@
 				<div class="ui teal left pointing label">2</div>
 			</a>
 		</div>
-
-		<!-- fix for bar on mobile -->
-		<a class="right item for-mobile">
-			Register
-		</a>
-		
-		<a class="right item for-mobile">
-			COMMUNITY
-			<div class="ui teal left pointing label">11</div>
-		</a>
-
-		<a class="active right item for-mobile">
-			CONTRIBUTORS
-			<div class="ui teal left pointing label">2</div>
-		</a>
 	</div>
+	<!-- ends not mobile nav -->
 
-	<!-- About Society -->
-<!-- 	<h2 class="ui centered header">
-		<img class="ui avatar image" src="/assets/images/logo.png">
-		<div class="content">
-			<h3 class="ui header">DotSlash Community</h3>
-		</div>
-	</h2> -->
-
-	<!-- for desktop -->
-	<!-- <div class="ui two column centered grid not-for-mobile">
-		<h5 class="ui centered header column">
-			<div class="content  about-content ">
-				We at DotSlash beleive in work together on projects blah blaah!!!!! blaaaaaahhhh blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah
-			</div>
-		</h5>
-	</div> -->
-
-	<!-- for mobile -->
-<!-- 	<div class="ui one column centered grid for-mobile">
-		<h5 class="ui centered header column">
-			<div class="content  about-content mob">
-				We at DotSlash beleive in work together on projects blah blaah!!!!! blaaaaaahhhh blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah
-			</div>
-		</h5>
-	</div> -->
-	<div style="width: 100%">
-		<div class="faces" style="width: 100%;">
+	<div class="full-width">
+		<div class="faces" class="full-width">
 			<h4 class="ui horizontal divider header">
 				<span class="small-font"> FOUNDERS </span>
 			</h4>
@@ -135,7 +127,7 @@
 		<div class="ui centered stackable ten column grid">
 			<div class="ten wide column">
 				<div class="ui menu">
-					<div class="ui fluid category search item" style="width: 100%;">
+					<div class="ui fluid category search item full-width">
 						<div class="ui transparent icon input">
 							<input class="prompt" placeholder="Search Members..." type="text">
 							<i class="search link icon"></i>
@@ -277,28 +269,26 @@
 		</div>
 
 		<!-- simple spacer -->
-		<div style="height: 10vh;"></div>
+		<div class="page-extra-space"></div>
 
 		<!-- Contact Section -->
-		<div style="width: 100%; height: 8vh; background: black; display: flex;
-		justify-content: center; /* align horizontal */
-		align-items: center;">
-		<center>
-			<span class="icon-footer" style="color: white;">
-				<i class="icon github"></i>
-				<i class="icon twitter"></i>
-				<i class="icon facebook"></i>
-				<i class="icon heart red-color"></i>
-			</span>
-		</center>
-	</div>
+		<div class="app-footer">
+			<center>
+				<span class="icon-footer app-footer-container">
+					<i class="icon github"></i>
+					<i class="icon twitter"></i>
+					<i class="icon facebook"></i>
+					<i class="icon heart red-color"></i>
+				</span>
+			</center>
+		</div>
 
-	<link rel="stylesheet" type="text/css" href="css/app/community.css">
-	<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/app/community.css">
+		<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
 
 	<!-- ########## NOTE ##########
 	During deployment please ensure this is uncommented and the bottom half is commented -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.css">
+<!-- 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.css">
 	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.js"></script> -->
 
 	<link rel="stylesheet" href="libs/semantic/semantic.min.css">
