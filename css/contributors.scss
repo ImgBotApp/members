@@ -1,0 +1,48 @@
+/*
+	@author prashantxc
+	@translated ksdme
+*/
+@import 'variables';
+@import 'utils';
+
+/* app globals */
+.app-background { @include app-background(); }
+.app-footer { @include footer-love(); }
+.app-footer-container { @include footer-lover(); }
+.app-nav-bar-fixes { @include app-nav-bar-fixes(); }
+
+.app-mobile-header-label-padding {
+	padding-left: $app-mobile-header-label-padding;
+}
+
+/* responsive design */
+@media only screen and (max-width: 767px) {
+	.not-for-mobile {
+		display: none !important; 
+	}
+}
+
+/* happens when it is not a mobile */
+@media only screen and (min-width: 768px) {
+	.for-mobile {
+		display: none !important;
+	}
+}
+
+/* class utiltities */
+.red-color { color: red; }
+.hover-color { color: white; }
+.small-font { font-size: $app-small-font; }
+
+.zero-radius {
+	border-radius: 0px !important;
+}
+
+.full-width {
+	width: 100%;
+}
+
+/* page-content.top - 100 */
+.page-extra-space {
+	height: 10vh;
+}

@@ -16,7 +16,16 @@
 
 /* app globals */
 .app-background { @include app-background(); }
-.app-nav-bar-fixes { @include app-nav-bar-fixes(); }
+.app-footer { @include footer-love(); }
+.app-footer-container { @include footer-lover(); }
+.app-nav-bar-fixes {
+	@include app-nav-bar-fixes();
+	padding: 0px !important;
+}
+
+.app-mobile-header-label-padding {
+	padding-left: $app-mobile-header-label-padding;
+}
 
 /* container for faces */
 .faces {
@@ -25,6 +34,7 @@
 
 	position: absolute !important;
 	bottom: -10px;
+	width: 100%;
 	left: 0px;
 }
 
@@ -41,6 +51,11 @@
 .page-content {
 	position: absolute;
 	top: 110vh;
+}
+
+/* page-content.top - 100 */
+.page-extra-space {
+	height: 10vh;
 }
 
 /* the five founding faces */
@@ -88,3 +103,11 @@
 .red-color { color: red; }
 .hover-color { color: white; }
 .small-font { font-size: $app-small-font; }
+
+.zero-radius {
+	border-radius: 0px !important;
+}
+
+.full-width {
+	width: 100%;
+}

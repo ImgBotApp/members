@@ -10,7 +10,7 @@
 /* globals */
 /* general nav bar */
 /* registration panel */
-/* registration panel */
+/* only registration panel */
 /*
 	@author ksdme
 */
@@ -22,7 +22,7 @@
 /* globals */
 /* general nav bar */
 /* registration panel */
-/* registration panel */
+/* only registration panel */
 /* app globals */
 .app-background {
   background: #ECE9E6;
@@ -31,7 +31,8 @@
 
 .app-nav-bar-fixes {
   padding: 12px;
-  border: 0px !important; }
+  border: 0px !important;
+  margin: 0px !important; }
 
 .register-view, .icon-footer {
   position: absolute !important;
@@ -60,7 +61,7 @@
     transform: none; }
 
   .icon-footer {
-    padding: 15px;
+    padding: 20px;
     position: relative !important;
     left: 50%;
     display: inline-block;
@@ -78,3 +79,6 @@
 
 .red-color {
   color: red; }
+
+.zero-radius {
+  border-radius: 0px !important; }

@@ -39,7 +39,7 @@
 	}
 
 	.icon-footer {
-		padding: $icon-footer-mobile-padding;
+		padding: $register-icon-footer-mobile-padding;
 		position: relative !important;
 		left: 50%; display: inline-block;
 		transform: translate(-50%);
@@ -57,3 +57,7 @@
 .small-text { font-size: $app-small-font; }
 .relative {	position: relative; }
 .red-color { color: red; }
+
+.zero-radius {
+	border-radius: 0px !important;
+}

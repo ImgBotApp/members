@@ -9,17 +9,48 @@
 
 <body class="app-background">
 
-	<!-- Navigation Bar -->
+	<!-- mobile navigation bar -->
+	<div class="ui menu zero-radius for-mobile">
+		<div class="item">
+			<img src="assets/images/logo.png" class="ui middle aligned mini rounded image">
+		</div>
 
+		<div class="right item">
+			<button class="ui icon button">
+				<i class="icon sidebar"></i>
+			</button>
+		</div>
+	</div>
+
+	<div class="ui centered grid for-mobile">
+		<div class="fifteen wide column">
+			<div class="ui fluid vertical menu">
+				<a class="teal item">
+					Register
+					<div class="ui label">1</div>
+				</a>
+				<a class="active item">
+					Community
+					<div class="ui teal left pointing label">11</div>
+				</a>
+				<a class="item">
+					Contributors
+					<div class="ui label">2</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- ends mobile nav -->
+
+	<!-- not mobile navigation bar -->
 	<div class="ui secondary stackable pointing menu app-nav-bar-fixes">
 		<a class="disabled item not-for-mobile">
 			<font color="#000000"> DotSlash Community </font>
 		</a>
 
-		<!-- visible only on PC and Tablet -->
 		<div class="right menu not-for-mobile">
 			<a class="item">
-				Register
+				REGISTER
 			</a>
 
 			<a class="active item">
@@ -32,50 +63,11 @@
 				<div class="ui teal left pointing label">2</div>
 			</a>
 		</div>
-
-		<!-- fix for bar on mobile -->
-		<a class="right item for-mobile">
-			Register
-		</a>
-		
-		<a class="right item for-mobile">
-			COMMUNITY
-			<div class="ui teal left pointing label">11</div>
-		</a>
-
-		<a class="active right item for-mobile">
-			CONTRIBUTORS
-			<div class="ui teal left pointing label">2</div>
-		</a>
 	</div>
+	<!-- ends not mobile nav -->
 
-	<!-- About Society -->
-<!-- 	<h2 class="ui centered header">
-		<img class="ui avatar image" src="/assets/images/logo.png">
-		<div class="content">
-			<h3 class="ui header">DotSlash Community</h3>
-		</div>
-	</h2> -->
-
-	<!-- for desktop -->
-	<!-- <div class="ui two column centered grid not-for-mobile">
-		<h5 class="ui centered header column">
-			<div class="content  about-content ">
-				We at DotSlash beleive in work together on projects blah blaah!!!!! blaaaaaahhhh blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah
-			</div>
-		</h5>
-	</div> -->
-
-	<!-- for mobile -->
-<!-- 	<div class="ui one column centered grid for-mobile">
-		<h5 class="ui centered header column">
-			<div class="content  about-content mob">
-				We at DotSlash beleive in work together on projects blah blaah!!!!! blaaaaaahhhh blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah blaaaahhhhhh!!!! blaaaah blaaaah blaaaaah
-			</div>
-		</h5>
-	</div> -->
-	<div style="width: 100%">
-		<div class="faces" style="width: 100%;">
+	<div class="full-width">
+		<div class="faces" class="full-width">
 			<h4 class="ui horizontal divider header">
 				<span class="small-font"> FOUNDERS </span>
 			</h4>
@@ -135,7 +127,7 @@
 		<div class="ui centered stackable ten column grid">
 			<div class="ten wide column">
 				<div class="ui menu">
-					<div class="ui fluid category search item" style="width: 100%;">
+					<div class="ui fluid category search item full-width">
 						<div class="ui transparent icon input">
 							<input class="prompt" placeholder="Search Members..." type="text">
 							<i class="search link icon"></i>
@@ -143,104 +135,104 @@
 						<div class="results"></div>
 					</div>
 				</div>
+			</div>
 
-				<div class="ten wide column">
-					<div class="ui five cards not-for-mobile">
-						<div class="ui card">
-							<div class="blurring dimmable image">
-								<div class="ui dimmer">
-									<div class="content">
-										<div class="center">
-											<h3 class="hover-color">Kilari Teja</h3>
-										</div>
+			<div class="ten wide column">
+				<div class="ui five cards not-for-mobile">
+					<div class="ui card">
+						<div class="blurring dimmable image">
+							<div class="ui dimmer">
+								<div class="content">
+									<div class="center">
+										<h3 class="hover-color">Kilari Teja</h3>
 									</div>
 								</div>
-								<img src="/assets/images/logo.png">
 							</div>
-							<div class="extra content center aligned">
-								<a href=""><i class="icon github"></i></a>
-								<a href=""><i class="icon twitter"></i></a>
-								<a href=""><i class="icon facebook"></i></a>
-							</div>
+							<img src="/assets/images/logo.png">
 						</div>
-
-						<div class="ui card">
-							<div class="blurring dimmable image">
-								<div class="ui dimmer">
-									<div class="content">
-										<div class="center">
-											<h3 class="hover-color">Kilari Teja</h3>
-										</div>
-									</div>
-								</div>
-								<img src="/assets/images/logo.png">
-							</div>
-							<div class="extra content center aligned">
-								<a href=""><i class="icon github"></i></a>
-								<a href=""><i class="icon twitter"></i></a>
-								<a href=""><i class="icon facebook"></i></a>
-							</div>
+						<div class="extra content center aligned">
+							<a href=""><i class="icon github"></i></a>
+							<a href=""><i class="icon twitter"></i></a>
+							<a href=""><i class="icon facebook"></i></a>
 						</div>
+					</div>
 
-						<div class="ui card">
-							<div class="blurring dimmable image">
-								<div class="ui dimmer">
-									<div class="content">
-										<div class="center">
-											<h3 class="hover-color">Kilari Teja</h3>
-										</div>
+					<div class="ui card">
+						<div class="blurring dimmable image">
+							<div class="ui dimmer">
+								<div class="content">
+									<div class="center">
+										<h3 class="hover-color">Kilari Teja</h3>
 									</div>
 								</div>
-								<img src="/assets/images/logo.png">
 							</div>
-							<div class="extra content center aligned">
-								<a href=""><i class="icon github"></i></a>
-								<a href=""><i class="icon twitter"></i></a>
-								<a href=""><i class="icon facebook"></i></a>
-							</div>
+							<img src="/assets/images/logo.png">
 						</div>
-
-						<div class="ui card">
-							<div class="blurring dimmable image">
-								<div class="ui dimmer">
-									<div class="content">
-										<div class="center">
-											<h3 class="hover-color">Kilari Teja</h3>
-										</div>
-									</div>
-								</div>
-								<img src="/assets/images/logo.png">
-							</div>
-							<div class="extra content center aligned">
-								<a href=""><i class="icon github"></i></a>
-								<a href=""><i class="icon twitter"></i></a>
-								<a href=""><i class="icon facebook"></i></a>
-							</div>
+						<div class="extra content center aligned">
+							<a href=""><i class="icon github"></i></a>
+							<a href=""><i class="icon twitter"></i></a>
+							<a href=""><i class="icon facebook"></i></a>
 						</div>
+					</div>
 
-						<div class="ui card">
-							<div class="blurring dimmable image">
-								<div class="ui dimmer">
-									<div class="content">
-										<div class="center">
-											<h3 class="hover-color">Kilari Teja</h3>
-										</div>
+					<div class="ui card">
+						<div class="blurring dimmable image">
+							<div class="ui dimmer">
+								<div class="content">
+									<div class="center">
+										<h3 class="hover-color">Kilari Teja</h3>
 									</div>
 								</div>
-								<img src="/assets/images/logo.png">
 							</div>
-							<div class="extra content center aligned">
-								<a href=""><i class="icon github"></i></a>
-								<a href=""><i class="icon twitter"></i></a>
-								<a href=""><i class="icon facebook"></i></a>
+							<img src="/assets/images/logo.png">
+						</div>
+						<div class="extra content center aligned">
+							<a href=""><i class="icon github"></i></a>
+							<a href=""><i class="icon twitter"></i></a>
+							<a href=""><i class="icon facebook"></i></a>
+						</div>
+					</div>
+
+					<div class="ui card">
+						<div class="blurring dimmable image">
+							<div class="ui dimmer">
+								<div class="content">
+									<div class="center">
+										<h3 class="hover-color">Kilari Teja</h3>
+									</div>
+								</div>
 							</div>
+							<img src="/assets/images/logo.png">
+						</div>
+						<div class="extra content center aligned">
+							<a href=""><i class="icon github"></i></a>
+							<a href=""><i class="icon twitter"></i></a>
+							<a href=""><i class="icon facebook"></i></a>
+						</div>
+					</div>
+
+					<div class="ui card">
+						<div class="blurring dimmable image">
+							<div class="ui dimmer">
+								<div class="content">
+									<div class="center">
+										<h3 class="hover-color">Kilari Teja</h3>
+									</div>
+								</div>
+							</div>
+							<img src="/assets/images/logo.png">
+						</div>
+						<div class="extra content center aligned">
+							<a href=""><i class="icon github"></i></a>
+							<a href=""><i class="icon twitter"></i></a>
+							<a href=""><i class="icon facebook"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="ui centered stackable ten column grid">
+		<!-- <div class="ui centered stackable ten column grid">
 			<div class="three wide column">
 				<div class="ui vertical fluid tabular menu">
 					<a class="active item">
@@ -274,31 +266,71 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 			</div>
-		</div>
+		</div> -->
+
+
+
+		<!-- <div class="ui segment">
+			<div class="ui right floated statistic">
+				<div class="value">
+					2,204
+				</div>
+				<div class="label">
+					Views
+				</div>
+			</div>
+			<p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+			<p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+			<div class="ui left floated">
+				<div class="ui card">
+					<div class="content">
+						<div class="right floated meta">14h</div>
+						<img class="ui avatar image" src="/images/avatar/large/elliot.jpg"> Elliot
+					</div>
+					<div class="image">
+						<img>
+					</div>
+					<div class="content">
+						<span class="right floated">
+							<i class="heart outline like icon"></i>
+							17 likes
+						</span>
+						<i class="comment icon"></i>
+						3 comments
+					</div>
+					<div class="extra content">
+						<div class="ui large transparent left icon input">
+							<i class="heart outline icon"></i>
+							<input placeholder="Add Comment..." type="text">
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+			<p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+		</div> -->
 
 		<!-- simple spacer -->
-		<div style="height: 10vh;"></div>
+		<div class="page-extra-space"></div>
 
 		<!-- Contact Section -->
-		<div style="width: 100%; height: 8vh; background: black; display: flex;
-		justify-content: center; /* align horizontal */
-		align-items: center;">
-		<center>
-			<span class="icon-footer" style="color: white;">
-				<i class="icon github"></i>
-				<i class="icon twitter"></i>
-				<i class="icon facebook"></i>
-				<i class="icon heart red-color"></i>
-			</span>
-		</center>
-	</div>
+		<div class="app-footer">
+			<center>
+				<span class="icon-footer app-footer-container">
+					<i class="icon github"></i>
+					<i class="icon twitter"></i>
+					<i class="icon facebook"></i>
+					<i class="icon heart red-color"></i>
+				</span>
+			</center>
+		</div>
 
-	<link rel="stylesheet" type="text/css" href="css/app/community.css">
-	<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/app/community.css">
+		<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
 
 	<!-- ########## NOTE ##########
 	During deployment please ensure this is uncommented and the bottom half is commented -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.css">
+<!-- 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.css">
 	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2/semantic.min.js"></script> -->
 
 	<link rel="stylesheet" href="libs/semantic/semantic.min.css">
